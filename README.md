@@ -6,7 +6,7 @@
 </p>
 
 <p align="center">
-  <a href="https://nutri-synth.vercel.app/"><strong>🌐 Explore Live Platform</strong></a> •
+  <a href="https://nutri-synth-black.vercel.app/"><strong>🌐 Explore Live Platform</strong></a> •
   <a href="https://github.com/astitwasi-11/NutriSynth"><strong>💻 Source Code</strong></a>
 </p>
 
