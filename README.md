@@ -1,206 +1,240 @@
-# 🥗 NutriSynth
-### Personalized Nutrition Intelligence & Digital Wellness Platform
+# NUTRISYNTH
+### An Integrated Personalized Nutrition Intelligence & Digital Wellness Ecosystem
 
 <p align="center">
-  <strong>Turning personal health data into structured nutrition insights, practical meal planning, and sustainable wellness habits.</strong>
+  <strong>Beyond Calories. Towards Intelligent Nutrition.</strong>
+  <br/>
+  Transforming nutritional science into structured, personalized and actionable digital experiences.
 </p>
 
 <p align="center">
-  <a href="https://nutri-synth-black.vercel.app/"><strong>🌐 Explore Live Platform</strong></a> •
-  <a href="https://github.com/astitwasi-11/NutriSynth"><strong>💻 Source Code</strong></a>
+  <a href="https://nutri-synth-black.vercel.app/"><strong>EXPLORE LIVE PLATFORM ↗</strong></a>
+  &nbsp; • &nbsp;
+  <a href="https://github.com/astitwasi-11/NutriSynth"><strong>VIEW SOURCE CODE</strong></a>
 </p>
 
 <p align="center">
   <img src="https://img.shields.io/badge/React-18-61DAFB?logo=react&logoColor=black" />
   <img src="https://img.shields.io/badge/TypeScript-5.5-3178C6?logo=typescript&logoColor=white" />
   <img src="https://img.shields.io/badge/Vite-5.4-646CFF?logo=vite&logoColor=white" />
-  <img src="https://img.shields.io/badge/Firebase-12-FFCA28?logo=firebase&logoColor=black" />
+  <img src="https://img.shields.io/badge/Firebase-Integration-FFCA28?logo=firebase&logoColor=black" />
   <img src="https://img.shields.io/badge/Deployment-Vercel-black?logo=vercel" />
-  <img src="https://img.shields.io/badge/Status-Active-success" />
+  <img src="https://img.shields.io/badge/License-See%20Repository-lightgrey" />
 </p>
 
 ---
 
-## 🌱 About NutriSynth
+## 01 — Project Overview
 
-**NutriSynth** is a personalized nutrition intelligence and wellness platform designed to make nutritional planning more accessible, structured, and data-informed.
+Nutrition is a multidimensional system influenced by individual physiology, dietary composition, metabolic requirements, lifestyle patterns and long-term behavioural consistency.
 
-The platform brings together nutritional calculations, dietary profiling, meal recommendations, nutrient screening, food tracking, wellness challenges, and analytical insights within a unified digital environment.
+However, nutritional information is frequently distributed across disconnected applications, static databases, independent calculators and conventional food-tracking platforms.
 
-Rather than treating nutrition as a collection of isolated calorie numbers, NutriSynth approaches it as an interconnected system involving individual requirements, dietary patterns, food composition, lifestyle factors, and long-term consistency.
+**NutriSynth** explores a more integrated approach.
 
-Built with React, TypeScript, and Firebase integration, the platform combines a modular application architecture with a responsive interface and locally accessible nutrition tools.
+It is a personalized nutrition intelligence and digital wellness ecosystem developed to connect nutritional calculations, dietary profiling, food composition, meal planning, nutrient awareness and behavioural tracking within a unified application.
 
-**The central objective is simple:**
+The platform translates individual characteristics into estimated nutritional requirements and organizes them into practical digital workflows, allowing users to explore their nutritional profiles, discover food options, monitor consumption and understand their progress.
 
-*Make personalized nutrition easier to understand, implement, monitor, and sustain.*
+Developed using a modular React and TypeScript architecture, NutriSynth brings together computational nutrition models, structured food information, recommendation logic, interactive interfaces and optional cloud-based persistence.
 
-## 🎯 Core Objectives
+The project focuses on three interconnected dimensions:
 
-- Develop an accessible personalized nutrition planning system.
-- Translate individual characteristics into estimated nutritional requirements.
-- Encourage informed food choices through structured nutritional information.
-- Integrate dietary preferences and restrictions into meal recommendations.
-- Provide nutrient-related educational and screening information.
-- Support consistent wellness habits through daily tracking and challenges.
-- Present nutritional information through understandable dashboards and reports.
+- **Nutritional Intelligence:** Estimating individual requirements through structured mathematical models and reference data.
+- **Dietary Implementation:** Translating nutritional targets into meal recommendations, food selection and grocery planning.
+- **Behavioural Continuity:** Supporting consistent wellness practices through tracking, progress monitoring and habit-oriented features.
+
+The ultimate objective is to make personalized nutrition more accessible, interpretable and actionable through technology.
 
 ---
 
-## ✨ Platform Capabilities
+## 02 — Design Philosophy
 
-### 01. Personalized Nutrition Engine
+NutriSynth is developed around the idea that nutritional planning should not be limited to calorie estimation.
 
-The nutrition engine calculates estimated nutritional requirements using individual profile information.
+A useful nutritional ecosystem must connect the entire process:
 
-**User inputs include:**
-- Age and gender
-- Height and body weight
+**Individual Profile → Nutritional Assessment → Dietary Planning → Food Consumption → Progress Monitoring → Continuous Improvement**
+
+This approach establishes a relationship between nutritional requirements and everyday dietary decisions.
+
+Rather than presenting isolated numerical outputs, the platform organizes information into interconnected modules that support different stages of an individual's nutritional journey.
+
+### Core Development Principles
+
+| Principle | Implementation Direction |
+|---|---|
+| Personalization | Individualized nutritional calculations |
+| Scientific grounding | Established equations and nutritional references |
+| Accessibility | Structured and understandable interfaces |
+| Integration | Connected nutrition and wellness modules |
+| Modularity | Independent, maintainable application components |
+| Extensibility | Architecture prepared for future integrations |
+| Transparency | Clear distinction between estimates and medical assessments |
+
+---
+
+## 03 — Platform Architecture & Functional Ecosystem
+
+NutriSynth consists of interconnected functional modules designed to support personalized nutrition management.
+
+### 3.1 Personalized Nutritional Assessment Engine
+
+The nutritional assessment engine forms the computational foundation of the platform.
+
+It processes user-specific characteristics to estimate energy expenditure and organize daily nutritional targets.
+
+**Input parameters**
+
+- Age
+- Biological sex
+- Height
+- Body weight
 - Physical activity level
 - Dietary preference
-- Fitness and nutritional goals
+- Nutritional objectives
 - Food allergies and intolerances
-- Female life-stage information, including pregnancy and lactation options
+- Relevant female life-stage information
 
-**Calculated outputs include:**
+**Computational outputs**
+
 - Basal Metabolic Rate (BMR)
 - Total Daily Energy Expenditure (TDEE)
-- Daily calorie requirements
+- Estimated daily energy requirements
 - Protein requirements
 - Carbohydrate requirements
 - Fat requirements
 - Dietary fibre targets
-- Estimated micronutrient intake
+- Selected micronutrient reference values
 
-The system uses the Mifflin–St Jeor equation for its BMR calculations, followed by activity-based energy estimation and macronutrient allocation.
+The engine uses the Mifflin–St Jeor equation for BMR estimation and activity-based multipliers for estimating total daily energy expenditure.
 
-### 02. Personalized Meal Recommendation
+### 3.2 Intelligent Dietary Recommendation System
 
-NutriSynth incorporates a structured food and recipe database to generate meal recommendations according to individual dietary profiles.
+The dietary recommendation module connects nutritional targets with structured food and recipe information.
 
-**Capabilities:**
-- Vegetarian, non-vegetarian, and vegan preferences
-- Ingredient-based meal selection
+It supports personalized food exploration based on dietary preferences and selected restrictions.
+
+**Functional capabilities**
+
+- Vegetarian, non-vegetarian and vegan preferences
 - Dietary restriction filtering
-- Breakfast, lunch, and dinner recommendations
-- Macronutrient information for recommended meals
-- Meal details and nutritional explanations
+- Allergy and intolerance considerations
+- Ingredient-based meal exploration
+- Breakfast, lunch and dinner recommendations
+- Recipe nutritional information
+- Meal selection according to individual preferences
 
-### 03. Nutrient Deficiency Information & Screening
+### 3.3 Micronutrient Intelligence & Deficiency Awareness
 
-A dedicated module provides nutritional screening information across 16 nutrients.
+The micronutrient module provides structured nutritional information across 16 nutrient categories.
 
-The module covers:
+The system includes:
 
-- Vitamin B12
-- Vitamin D
-- Iron
-- Calcium
-- Zinc
-- Folate
-- Vitamin A
-- Vitamin C
-- Vitamin E
-- Vitamin K
-- Magnesium
-- Iodine
-- Selenium
-- Potassium
-- Protein
-- Dietary fibre
+| Nutritional category | Examples |
+|---|---|
+| Vitamins | A, B12, C, D, E, K and Folate |
+| Minerals | Iron, Calcium, Zinc, Magnesium, Iodine, Selenium and Potassium |
+| Other nutritional components | Protein and Dietary Fibre |
 
-Users can explore recommended intake information, nutritional indicators, and optional laboratory-result inputs.
+The module supports the exploration of nutritional requirements, reference information and selected laboratory-result inputs.
 
-The purpose is to improve nutritional awareness and provide educational insights, not to diagnose medical deficiencies.
+Its purpose is educational nutritional awareness and preliminary screening support, not clinical diagnosis.
 
-### 04. Smart Meal Planner
+### 3.4 Smart Meal Planning System
 
-An integrated meal-planning module helps users explore and organize meals according to their requirements.
+The meal-planning environment translates nutritional preferences into organized meal options.
 
-**Features:**
+**Capabilities**
+
 - Recipe discovery
-- Meal-category filtering
+- Meal-category organization
 - Dietary preference filtering
 - Cooking-time filtering
 - Budget-oriented recipe categories
-- Allergy-related ingredient filters
-- Daily four-meal planning
-- Recipe nutritional breakdown
-- Add meals to daily intake
-- Transfer ingredients to grocery lists
+- Ingredient and allergy-related filtering
+- Daily meal organization
+- Four-meal planning workflow
+- Nutritional breakdown of selected recipes
+- Integration with daily food logging
+- Grocery-list generation
 
-### 05. Food Search & Nutrition Logger
+### 3.5 Food Composition & Dietary Logging
 
-The food tracking module allows users to record their daily food consumption.
+The food logging module provides an interface for recording daily dietary consumption.
 
-**Features:**
-- Searchable food database
-- Nutritional information lookup
+**Functional capabilities**
+
+- Food database search
+- Nutritional information retrieval
 - Portion-size adjustment
-- Calorie and macronutrient tracking
+- Calorie tracking
+- Macronutrient monitoring
 - Custom food entries
-- One-step meal logging
-- Daily nutrition progress integration
+- Daily meal logging
+- Integration with nutritional progress indicators
 
-### 06. Food Photo Scanning Interface
+### 3.6 Visual Food Logging Interface
 
-NutriSynth also includes a photo-based food logging interface.
+NutriSynth includes a photo-based food interaction workflow designed to support food selection and logging.
 
-Users can access the scanning workflow and select suggested food items for nutritional logging.
+The current implementation uses predefined database-backed suggestions rather than a deployed computer-vision recognition model.
 
-**Implementation note:** The current recognition service uses predefined database-backed food suggestions. It is an extensible interface for future integration with an actual computer-vision recognition model.
+The module establishes a foundation for future image-recognition integration.
 
-### 07. NutriSynth Nutrition Assistant
+### 3.7 Conversational Nutrition Assistant
 
-The integrated nutrition chatbot provides conversational access to selected platform capabilities.
+The integrated nutrition assistant provides a conversational interface for selected nutrition-related tasks.
 
-Its current functionality includes:
+Its current implementation uses structured information and locally implemented rule-based logic.
+
+**Supported functional areas**
 
 - Food and calorie lookup
 - Macronutrient explanations
-- Recipe recommendations
+- Recipe guidance
 - Nutrition-related educational responses
-- Contextual assistance using the active user profile
-- Navigation to platform modules
-- Direct meal logging through supported chat actions
+- Platform navigation
+- Supported meal-logging interactions
 
-The current assistant uses locally implemented rule-based logic and structured nutrition data.
+It is designed as an extensible conversational layer rather than a substitute for professional nutritional consultation.
 
-### 08. Wellness Tracking & Habit Development
+### 3.8 Wellness & Habit Management
 
-Nutrition is not only about calculating requirements. Consistency also matters.
+The wellness module addresses the behavioural dimension of nutrition.
 
-NutriSynth incorporates habit-oriented modules to encourage sustainable daily practices.
+**Features**
 
-**Included features:**
 - Daily wellness check-ins
-- Consecutive-day streak tracking
 - Hydration tracking
 - Daily food and water logs
-- Achievement badges
+- Consecutive-day streak tracking
+- Achievement indicators
 - Daily wellness challenges
 - Dedicated 30-day wellness challenge
-- Challenge completion tracking
+- Challenge completion monitoring
 
-### 09. Nutrition & Weight Analytics
+### 3.9 Nutrition Analytics & Weight Monitoring
 
-The analytics module provides tools for monitoring personal progress.
+The analytics environment provides tools for tracking selected personal progress indicators.
 
-**Capabilities:**
-- Weight-entry tracking
-- Weight history visualization
+**Capabilities**
+
+- Weight-entry management
+- Historical weight visualization
 - Target-weight reference
 - Nutritional target overview
 - Weekly report interface
 - PDF report generation
 
-Some weekly compliance indicators are currently illustrative rather than derived from a complete historical meal-tracking dataset.
+Historical analytics and compliance indicators depend on the availability of actual recorded data; illustrative indicators should not be interpreted as measured outcomes.
 
-### 10. Smart Grocery Management
+### 3.10 Smart Grocery Management
 
-A dedicated grocery management module connects nutritional planning with practical food purchasing.
+The grocery module connects meal planning with practical ingredient organization.
 
-**Features:**
+**Features**
+
 - Categorized grocery lists
 - Produce and vegetables
 - Protein sources
@@ -208,106 +242,118 @@ A dedicated grocery management module connects nutritional planning with practic
 - Grains and bakery products
 - Pantry essentials
 - Custom grocery entries
-- Completion tracking
+- Shopping completion tracking
 - PDF checklist export
 
 ---
 
-## ⚙️ Nutritional Calculation Framework
+## 04 — Computational Nutrition Framework
 
-NutriSynth uses structured mathematical models and nutritional reference data to estimate individual requirements.
+The computational layer is designed around established nutritional estimation methods.
 
-| Parameter | Calculation approach |
-|---|---|
-| BMR | Mifflin–St Jeor equation |
-| TDEE | BMR × activity multiplier |
-| Protein | Activity-based protein allocation |
-| Carbohydrates | Remaining energy allocation |
-| Fat | Percentage-based energy allocation |
-| Fibre | Gender-based reference targets |
-| Micronutrients | Structured nutrient reference data |
+### 4.1 Basal Metabolic Rate
 
-### Activity Multipliers
+The Mifflin–St Jeor equation is used to estimate basal metabolic rate.
 
-| Activity category | Multiplier |
+For males:
+
+BMR = 10W + 6.25H − 5A + 5
+
+For females:
+
+BMR = 10W + 6.25H − 5A − 161
+
+Where:
+
+- W = Body weight in kilograms
+- H = Height in centimetres
+- A = Age in years
+
+### 4.2 Total Daily Energy Expenditure
+
+Estimated energy expenditure is calculated using an activity multiplier.
+
+TDEE = BMR × Activity Factor
+
+### 4.3 Activity Classification
+
+| Activity level | Multiplier |
 |---|---:|
 | Sedentary | 1.20 |
-| Light | 1.375 |
-| Moderate | 1.55 |
-| Active | 1.725 |
+| Lightly Active | 1.375 |
+| Moderately Active | 1.55 |
+| Very Active | 1.725 |
 | Extra Active | 1.90 |
 
-These values are used as estimation factors, not direct measurements of metabolic expenditure.
+### 4.4 Macronutrient Allocation
 
-### Nutritional Reference Framework
+The platform organizes macronutrient targets around estimated daily energy requirements.
 
-The platform's nutritional information is informed by reference material associated with:
+- Protein: Activity- and goal-dependent allocation.
+- Carbohydrates: Energy allocation after accounting for protein and fat.
+- Fat: Percentage-based energy allocation.
+- Fibre: Reference-based daily target.
 
-- ICMR – Indian Council of Medical Research
-- WHO – World Health Organization
-- NIH – National Institutes of Health
+These calculations are estimates and should be interpreted with consideration of individual requirements.
+
+### 4.5 Nutritional Reference Framework
+
+The platform's nutritional information is informed by established nutritional resources, including:
+
+- Indian Council of Medical Research (ICMR)
+- World Health Organization (WHO)
+- National Institutes of Health (NIH)
 - USDA FoodData Central
 - National Academies Dietary Reference Intakes
 
-Reference values and calculated outputs should be interpreted in the context of individual requirements and the limitations of the underlying datasets.
+Reference datasets and recommendations may differ according to population, age, biological sex and physiological conditions.
 
 ---
 
-## 🏗️ Technology Stack
+## 05 — Technical Architecture
 
-| Technology | Application |
+NutriSynth follows a component-oriented application architecture built around reusable interfaces, modular logic and separated functional responsibilities.
+
+### Technology Stack
+
+| Technology | Purpose |
 |---|---|
-| React 18 | Component-based user interface |
-| TypeScript | Application logic and type safety |
-| Vite | Development server and build system |
-| Tailwind CSS | Interface styling |
-| Firebase Authentication | Authentication integration |
+| React 18 | Frontend application framework |
+| TypeScript | Typed application development |
+| Vite | Development and production build system |
+| Tailwind CSS | Utility-based interface styling |
+| Firebase Authentication | Optional user authentication |
 | Cloud Firestore | Optional cloud data persistence |
-| Lucide React | Interface icons |
-| jsPDF | PDF report generation |
-| html2canvas | HTML-to-image rendering |
+| Lucide React | Iconography |
+| jsPDF | PDF document generation |
+| html2canvas | Interface-to-image rendering |
 | PptxGenJS | Presentation generation dependency |
 
-### Application Architecture
+### System Architecture
 
 ```text
-NutriSynth
-│
-├── Presentation Layer
-│   ├── Landing Page
-│   ├── User Onboarding
-│   ├── Dashboard
-│   ├── Meal Planner
-│   └── Analytics
-│
-├── Nutrition Layer
-│   ├── BMR & TDEE Calculations
-│   ├── Macronutrient Allocation
-│   ├── Food Database
-│   ├── Recipe Recommendations
-│   └── Nutrient Reference Data
-│
-├── Wellness Layer
-│   ├── Food Logger
-│   ├── Deficiency Information
-│   ├── Hydration Tracking
-│   ├── Daily Streaks
-│   └── Wellness Challenges
-│
-├── Intelligence Layer
-│   ├── Nutrition Assistant
-│   ├── Food Lookup
-│   └── Recommendation Logic
-│
-└── Persistence Layer
-    ├── Local Storage
-    ├── Firebase Authentication
-    └── Cloud Firestore
+                    NUTRISYNTH
+                        |
+          +-------------+-------------+
+          |             |             |
+      USER LAYER    LOGIC LAYER   DATA LAYER
+          |             |             |
+     Dashboard     Nutrition       Food Data
+     Onboarding    Calculations    Recipe Data
+     Meal Planner  Recommendations Nutrient Data
+     Analytics     Tracking Logic  User Records
+          |             |             |
+          +-------------+-------------+
+                        |
+                APPLICATION SERVICES
+                        |
+          +-------------+-------------+
+          |             |             |
+      Local Storage  Firebase     Reporting
+                     Services     & Export
 ```
 
----
-
-## 📂 Project Structure
+### Application Structure
 
 ```text
 NutriSynth/
@@ -319,11 +365,11 @@ NutriSynth/
     ├── src/
     │   ├── assets/
     │   ├── components/
-    │   │   ├── Dashboard.tsx
-    │   │   ├── Onboarding.tsx
-    │   │   ├── DeficiencyCheck.tsx
-    │   │   ├── SmartMealPlanner.tsx
-    │   │   ├── Chatbot.tsx
+    │   │   ├── Dashboard
+    │   │   ├── Onboarding
+    │   │   ├── SmartMealPlanner
+    │   │   ├── DeficiencyCheck
+    │   │   ├── FoodSearchLogger
     │   │   └── ...
     │   │
     │   ├── context/
@@ -338,6 +384,7 @@ NutriSynth/
     │   │   ├── firebase.ts
     │   │   ├── cloudStore.ts
     │   │   ├── foodRecognitionService.ts
+    │   │   ├── recentFoods.ts
     │   │   └── streakService.ts
     │   │
     │   ├── App.tsx
@@ -354,60 +401,61 @@ NutriSynth/
 
 ---
 
-## 🚀 Getting Started
+## 06 — Installation & Local Development
 
-### Prerequisites
+### System Requirements
 
-- Node.js (recommended: Node.js 20 or newer)
-- npm
+- Node.js 20 or newer recommended
+- npm package manager
 - Git
+- Modern web browser
 
-### 1. Clone the Repository
+### Step 1 — Clone the Repository
 
 ```bash
 git clone https://github.com/astitwasi-11/NutriSynth.git
 ```
 
-### 2. Navigate to the Application Directory
+### Step 2 — Navigate to the Project
 
 ```bash
 cd NutriSynth/NutriSynth-main
 ```
 
-### 3. Install Dependencies
+### Step 3 — Install Dependencies
 
 ```bash
 npm install
 ```
 
-### 4. Configure Firebase (Optional)
+### Step 4 — Configure Environment Variables
 
-Create a `.env` file inside `NutriSynth-main`:
+For optional Firebase integration, create a `.env` file in the application directory.
 
 ```env
-VITE_FIREBASE_API_KEY=your_firebase_api_key
+VITE_FIREBASE_API_KEY=your_api_key
 VITE_FIREBASE_AUTH_DOMAIN=your_project.firebaseapp.com
 VITE_FIREBASE_PROJECT_ID=your_project_id
-VITE_FIREBASE_APP_ID=your_firebase_app_id
+VITE_FIREBASE_APP_ID=your_app_id
 ```
 
-Configure Firebase Authentication and Cloud Firestore if cloud-based accounts and synchronization are required.
+Use the actual configuration values from your Firebase project.
 
-Without Firebase configuration, the application supports local fallback functionality using browser storage.
+Do not commit private environment files or credentials.
 
-### 5. Run the Development Server
+### Step 5 — Start Development Server
 
 ```bash
 npm run dev
 ```
 
-### 6. Build for Production
+### Step 6 — Generate Production Build
 
 ```bash
 npm run build
 ```
 
-### 7. Preview Production Build
+### Step 7 — Preview Production Build
 
 ```bash
 npm run preview
@@ -415,96 +463,131 @@ npm run preview
 
 ---
 
-## 🔒 Data Handling & Privacy
+## 07 — Data Management & Persistence
 
-NutriSynth supports both browser-based storage and optional Firebase cloud persistence.
+NutriSynth supports browser-based storage and optional Firebase integration.
 
-- Guest and local fallback functionality uses browser storage.
-- User profiles and nutrition results can be synchronized through Firestore when configured.
-- Authentication can be provided through Firebase Authentication.
-- Cloud synchronization depends on Firebase configuration and security rules.
+The persistence architecture is designed to support different application environments.
 
-Users should avoid entering sensitive medical information into an experimental application without reviewing its privacy and security arrangements.
+| Component | Responsibility |
+|---|---|
+| Local Storage | Browser-based persistence and fallback functionality |
+| Firebase Authentication | Optional authentication |
+| Cloud Firestore | Optional cloud-based data synchronization |
+| Structured Data Modules | Food, recipe and nutrient reference information |
+
+Cloud-based capabilities depend on the configured Firebase services and applicable security rules.
 
 ---
 
-## ⚕️ Health & Medical Disclaimer
+## 08 — Development Roadmap
+
+NutriSynth is an evolving platform with opportunities for further technical and nutritional development.
+
+### Planned Development Directions
+
+- [ ] Computer-vision-based food recognition.
+- [ ] Expanded Indian food composition database.
+- [ ] Advanced meal optimization algorithms.
+- [ ] More comprehensive nutritional reference validation.
+- [ ] Advanced female-specific nutrition pathways.
+- [ ] Improved historical dietary analytics.
+- [ ] Wearable health data integration.
+- [ ] Multilingual nutritional interfaces.
+- [ ] Expanded food allergy and intolerance validation.
+- [ ] Advanced personalized reporting.
+- [ ] External nutrition database integration.
+- [ ] Enhanced cloud synchronization and data management.
+
+---
+
+## 09 — Health, Safety & Limitations
 
 NutriSynth is an educational and informational nutrition platform.
 
-Its calculated values are estimates based on mathematical models and structured nutritional reference data.
+All calculated nutritional values are estimates derived from mathematical models and structured reference information.
 
-The platform:
+The platform is not a medical diagnostic system and does not replace:
 
-- Does not diagnose nutritional deficiencies.
-- Does not replace laboratory investigations.
-- Does not provide medical treatment.
-- Does not replace a registered dietitian or qualified healthcare professional.
-- May not account for every individual medical condition, medication interaction, or variation in nutrient absorption.
+- Clinical nutritional assessment.
+- Laboratory investigations.
+- Registered dietitian consultation.
+- Medical treatment or professional healthcare guidance.
 
-Always consult a qualified healthcare professional before making significant dietary changes, particularly during pregnancy, lactation, or when managing a medical condition.
-
----
-
-## 🛣️ Future Development Roadmap
-
-NutriSynth is designed as an extensible platform. Potential development directions include:
-
-- [ ] Integration of a real AI-powered food image recognition model.
-- [ ] More extensive Indian food composition datasets.
-- [ ] Advanced recipe optimization.
-- [ ] Real-time nutrition data integration.
-- [ ] More comprehensive female-specific nutrition pathways.
-- [ ] Historical nutrition trend analysis using actual logged data.
-- [ ] Improved nutrient screening validation.
-- [ ] Multilingual support.
-- [ ] Expanded food allergy and intolerance validation.
-- [ ] Advanced downloadable nutrition reports.
-- [ ] Integration with wearable health data.
+Nutrient screening information must not be interpreted as confirmation of a deficiency. Users with medical conditions, pregnancy-related nutritional requirements or other specialized needs should consult qualified healthcare professionals.
 
 ---
 
-## 🤝 Contributing
+## 10 — Contribution & Open Development
 
-Contributions, suggestions, and technical discussions are welcome.
+NutriSynth welcomes technical feedback, suggestions and contributions.
 
-If you would like to contribute:
+Developers interested in improving the platform can:
 
 1. Fork the repository.
-2. Create a feature branch.
-3. Implement and test your changes.
-4. Commit your changes with a descriptive message.
-5. Submit a pull request.
+2. Create a dedicated feature branch.
+3. Implement and test their changes.
+4. Submit a pull request.
+5. Describe the proposed changes and their technical relevance.
 
 ```bash
-git checkout -b feature/your-feature
+git checkout -b feature/new-feature
 git add .
-git commit -m "Add: your feature description"
-git push origin feature/your-feature
+git commit -m "Add: feature description"
+git push origin feature/new-feature
 ```
 
 ---
 
-## 👨‍💻 Project & Developer
+## 11 — Project Information
 
-**NutriSynth** is an independently developed project exploring the intersection of nutritional science, computational methods, software engineering, and digital wellness.
+| Attribute | Details |
+|---|---|
+| Project | NutriSynth |
+| Category | Personalized Nutrition & Digital Wellness |
+| Architecture | Component-oriented web application |
+| Frontend | React + TypeScript |
+| Build System | Vite |
+| Cloud Integration | Firebase |
+| Deployment | Vercel |
+| Development Status | Active |
 
-Developed by **Astitwa Si**
+### Project Resources
 
-- GitHub: [@astitwasi-11](https://github.com/astitwasi-11)
-- Project Repository: [NutriSynth](https://github.com/astitwasi-11/NutriSynth)
-- Live Application: [nutri-synth.vercel.app](https://nutri-synth.vercel.app/)
+**Live Application**
+
+https://nutri-synth-black.vercel.app/
+
+**GitHub Repository**
+
+https://github.com/astitwasi-11/NutriSynth
+
+**Developer**
+
+Astitwa Si
+
+GitHub: https://github.com/astitwasi-11
 
 ---
 
-## 📜 License
+## 12 — Closing Perspective
 
-No license file is currently included in the inspected repository. Add a `LICENSE` file to explicitly define the terms under which others may use, modify, and distribute this project.
+NutriSynth represents an exploration of how computational methods, nutritional science and software engineering can be brought together to address everyday nutritional challenges.
+
+The project moves beyond isolated calorie calculations and explores a connected framework involving nutritional estimation, dietary recommendations, food information, behavioural tracking and analytical interpretation.
+
+Its architecture is intended to evolve through better datasets, validated calculations, expanded integrations and improved personalization.
+
+**The broader vision is to transform nutrition from disconnected information into a more structured, understandable and actionable digital experience.**
 
 ---
 
 <p align="center">
-  <strong>NutriSynth — Beyond Calories. Towards Intelligent Nutrition.</strong>
+  <strong>NUTRISYNTH</strong>
   <br/>
-  <sub>Building a more informed, personalized, and sustainable approach to everyday nutrition.</sub>
+  <em>Beyond Calories. Towards Intelligent Nutrition.</em>
+  <br/><br/>
+  Built with curiosity, computational thinking and a commitment to better nutritional awareness.
+  <br/><br/>
+  © 2026 Astitwa Si
 </p>
